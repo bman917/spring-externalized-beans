@@ -1,0 +1,14 @@
+plugins {
+	id "io.freefair.lombok" version "5.1.0"
+	id 'java-library'
+}
+
+archivesBaseName = 'demoimpl2'
+sourceCompatibility = '1.8'
+
+dependencies {
+	implementation project(':app-interface')
+	compileOnly 'org.projectlombok:lombok'
+	implementation group: 'org.springframework', name: 'spring-context', version: '5.3.4'
+
+}
